@@ -7,10 +7,10 @@ import { setRootEl, setRoutes, onURLChange } from './router.js';
 
 // Defina suas rotas e suas visualizações associadas
 const routes = {
-  '/': Home,
+  "/": Home,
   // '/chatIndividual': ChatIndividual,
   // '/chatEmGrupo' : ChatEmGrupo,
-  '/Error': Error
+  "/error": Error,
 };
 
 
