@@ -1,0 +1,322 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto Condensed;
+}
+body,
+html {
+  background: #000000;
+  /* height: 100vh;  */
+  overflow: hidden; /*Isso remove a barra de rolagem do body */
+  height: 100vh; /* Isso define a altura do body para a altura da janela de visualização */
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  top: 5px;
+  left: 10px;
+  height: 6vh;
+}
+header figure img {
+  width: 45px;
+  height: 37px;
+  margin: 8px;
+}
+header h1 {
+  color: #ffa500;
+  font-family: Lemon;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 10px;
+  padding-right: 5px;
+  font-family: Roboto Condensed;
+  background-color: #ffa500;
+  height: 4vh;
+}
+.menu *{
+  padding-right: 5px;
+}
+label{
+  font-size: 12px;
+  font-weight: bold;
+}
+select{
+  font-size: 12px;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+}
+#limpar-filtro{
+  font-size: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: #000000;
+  color: #ffa500;
+  padding-left: 5px;
+  height: auto;
+}
+.meu-menu{
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffa500;
+}
+.estatisticas{
+  background-color: #ffa500;
+  height: auto;
+  
+}
+#listaClassificacao{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#listaClassificacao li{
+  color: #000000;
+
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 8px;
+  /* margin-bottom: 8px; */
+  height: 80vh;
+}
+h2 {
+  font-family: Lemon;
+  color: #ffa500;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 200;
+  align-self: center;
+  margin: 2px;
+  height: 5vh;
+}
+#caixa-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 8px;
+  height: 75vh;
+}
+.cartoes {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 93%;
+  overflow-y: auto;
+
+}
+.cartao {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  background: #d9d9d9;
+  border-radius: 5px;
+  max-width: 250px;
+  min-width: 200px;
+  width: 30vh;
+  height: 40vh;
+  margin: 4px;
+  padding: 6px;
+}
+.classificacao {
+  border-radius: 5px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 18px;
+  height: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  color: white;
+  text-align: center;
+  font-family: "Salsa-Regular", sans-serif;
+  font-size: 8px;
+  font-weight: 400;
+}
+.cl-L {
+  background-color: #009118;
+}
+.cl-A10 {
+  background-color: #0081d8;
+}
+.cl-A12 {
+  background-color: #f9d018;
+}
+.cl-A14 {
+  background-color: #f38611;
+}
+.cl-A16 {
+  background-color: #d3000a;
+}
+.cl-A18 {
+  background-color: #000000;
+}
+.container-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  clear: both;
+  margin-top: 5px;
+}
+.container-img img{
+  width:170px;
+  height:100px;
+  object-fit: cover;
+}
+.cartao img {
+  vertical-align: top;
+  border-radius: 5px;
+}
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Roboto Condensed;
+}
+.avaliacao{
+  color: #000000;
+  text-align: center;
+  font-family: "Salsa-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+.temporadasPlataforma{
+  color: #000000;
+  text-align: center;
+  font-family: "Salsa-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+.info-externa {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+.cartao button {
+  background-color: #ffa500;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /*transparente */
+  z-index: 9; /* Garante que o overlay fique acima de outros elementos */
+}
+.curiosidades {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 25%;
+  top: 25%;
+  width: 50%;
+  height: 50%;
+  overflow: auto;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+}
+.curiosidades h6 {
+  text-align: center;
+  color: #000000; /* Ajuste a cor do texto conforme necessário */
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "RobotoCondensed-Light", sans-serif;
+  padding-top: 10px;
+
+}
+.descricao {
+  color: #000000;
+  font-size: 12px;
+  font-family: "RobotoCondensed-Light", sans-serif;
+  padding-top: 12px;
+  margin: 10px;
+}
+.episodios, .musica, .criador, .produtor, .studio{
+  color: #000000;
+  font-size: 12px;
+  padding-top: 12px;
+  text-align: left;
+  padding-left: 10px;
+  font-weight: bold;
+  margin: 10px;
+}
+.valor{
+  font-weight: normal;
+}
+footer {
+  background-color: #ffa500;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  margin-top: 3px;
+  height: 2vh;
+}
+footer p {
+  color: #000000;
+  text-align: center;
+  font-family: "Lily Script One";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media(max-width: 768px) {
+  .cartao {
+    width: 35vh;
+    height: 45vh;
+  }
+}
+
+@media(max-width:1024px) {
+  .cartao {
+    width: 20%;
+    min-width: 200px;
+    max-width: 300px;
+  }
+}
+@media (min-width: 1440px) {
+  .cartao {
+    width: 30%; /* Define a largura dos cartões */
+    min-width: 150x; /* Largura mínima */
+    max-width: 220px; /* Largura máxima */
+  }
+}
+
+
