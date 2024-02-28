@@ -2,7 +2,7 @@
 let ROUTES = {};
 let rootEl;
 
-const ERRORPATH = '/Error'
+const ERRORPATH = '/error'
 
 export const setRootEl = (el) => {
   // atribui rootEl
@@ -32,12 +32,12 @@ export const setRoutes = (routes) => {
  const renderView = (pathname, props = {name: " ", id: ""}) => {
   console.log("renderView");
   //limpa o elemento raiz
-  rootEl.innerHTML = "";
+  rootEl.textContent = "";
 
   let path = "";
 
   //encontra a visualização correta em ROUTES para o nome do caminho
-  if(!pathname in ROUTES){
+  if(pathname in ROUTES){
     path = pathname;
   }
   else{
