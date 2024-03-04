@@ -1,6 +1,6 @@
-export default function Error(props) {
+export default function error(props) {
   const viewEl = document.createElement('div');
-  viewEl.textContent = 'error!';
+  viewEl.textContent = `error!`;
   return viewEl;
 }
 
