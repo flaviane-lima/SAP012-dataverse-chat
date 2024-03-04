@@ -2,7 +2,7 @@
 let ROUTES = {};
 let rootEl;
 
-const ERRORPATH = '/error'
+const ERRORPATH = '/Error'
 
 export const setRootEl = (el) => {
   // atribui rootEl
