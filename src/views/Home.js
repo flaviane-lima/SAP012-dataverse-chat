@@ -1,15 +1,15 @@
 // src/views/Home.js
 
-import  {renderItems}  from '../components/cards.js';
-import  data  from '../data/dataset.js';
-import {filterBy, computeStats, sortBy  } from '../lib/dataFunctions.js';
+import { renderItems } from '../components/cards.js';
+import data from '../data/dataset.js';
+import { filterBy, computeStats, sortBy } from '../lib/dataFunctions.js';
 import { renderListClassification } from '../components/estatistica.js';
 let dadosExibidos = data;
 
 
-export default function Home(props) {
+export default function home(props) {
   const viewEl = document.createElement('div');
-viewEl.innerHTML = `<section class="menu">
+  viewEl.innerHTML = `<section class="menu">
 <section id="filtro">
   <label for="streaming">Filtrar por</label>
   <select data-testid="select-filter" id="streaming" name="streaming">
@@ -42,14 +42,14 @@ viewEl.innerHTML = `<section class="menu">
 <section id="caixa-card"></section>
 </main>`;
 
-// const exibirCartao = viewEl.querySelector('#root');
-// console.log(exibirCartao);
-// viewEl.addEventListener("DOMContentLoaded", () => {
-//   exibirCartao.appendChild(renderItems(data))
+  // const exibirCartao = viewEl.querySelector('#root');
+  // console.log(exibirCartao);
+  // viewEl.addEventListener("DOMContentLoaded", () => {
+  //   exibirCartao.appendChild(renderItems(data))
 
-// })
-//neste caso está redenrisando o cartão não foi preciso o uso  do addEventListener
-const exibirCartao = viewEl.querySelector('#caixa-card');
+  // })
+  //neste caso está redenrisando o cartão não foi preciso o uso  do addEventListener
+  const exibirCartao = viewEl.querySelector('#caixa-card');
   exibirCartao.appendChild(renderItems(data))
 
   //filtrar os card
@@ -58,58 +58,58 @@ const exibirCartao = viewEl.querySelector('#caixa-card');
 
   botaoFiltra.addEventListener('change', (event) => {
 
-  const valorFiltro = event.target.value;
+    const valorFiltro = event.target.value;
 
-  dadosExibidos = filterBy(data, 'streaming', valorFiltro)
-  exibirCartao.innerHTML = ""  //apaga a lista antiga
-  exibirCartao.appendChild(renderItems(dadosExibidos)) //renderisa uma nova lista
-})
-  
-// botão de limpar
-const limparBotao = viewEl.querySelector('#limpar-filtro');
+    dadosExibidos = filterBy(data, 'streaming', valorFiltro)
+    exibirCartao.innerHTML = ""  //apaga a lista antiga
+    exibirCartao.appendChild(renderItems(dadosExibidos)) //renderisa uma nova lista
+  })
 
-limparBotao.addEventListener('click', () => {
-  exibirCartao.innerHTML = ""; //apaga a lista antiga
-  ordenacao.value = "";
-  botaoFiltra.value = "";
-  exibirCartao.appendChild(renderItems(data)) //redenrisa a nova lista
-})
+  // botão de limpar
+  const limparBotao = viewEl.querySelector('#limpar-filtro');
 
-//ordenar os cards
-const ordenacao = viewEl.querySelector('#ordenacao');
+  limparBotao.addEventListener('click', () => {
+    exibirCartao.innerHTML = ""; //apaga a lista antiga
+    ordenacao.value = "";
+    botaoFiltra.value = "";
+    exibirCartao.appendChild(renderItems(data)) //redenrisa a nova lista
+  })
 
-ordenacao.addEventListener('change', (event) => {
-  const valorOrdenacao = event.target.value;
-  const valorOrdenado = sortBy(dadosExibidos, 'name', valorOrdenacao)
-  exibirCartao.innerHTML = "" //apaga a lista antiga
-  exibirCartao.appendChild(renderItems(valorOrdenado)) //redenrisa a nova lista
+  //ordenar os cards
+  const ordenacao = viewEl.querySelector('#ordenacao');
 
-})
-//estatistica
-const classificationList = viewEl.querySelector('.estatisticas');
-classificationList.appendChild(renderListClassification(computeStats(data)));
+  ordenacao.addEventListener('change', (event) => {
+    const valorOrdenacao = event.target.value;
+    const valorOrdenado = sortBy(dadosExibidos, 'name', valorOrdenacao)
+    exibirCartao.innerHTML = "" //apaga a lista antiga
+    exibirCartao.appendChild(renderItems(valorOrdenado)) //redenrisa a nova lista
 
-//modal
-window.closeModal = (id) => {
-  const modal = viewEl.querySelector("#modal-" + id);
-  modal.style.display = "none";
-}
-window.openModal = (id) => {
-  const modal = viewEl.querySelector("#modal-" + id);
-  modal.style.display = "block";
-  // Criar e adicionar o elemento de fundo transparente
-  const overlay = viewEl.createElement('div');
-  overlay.classList.add('modal-overlay');
-  viewEl.body.appendChild(overlay);
+  })
+  //estatistica
+  const classificationList = viewEl.querySelector('.estatisticas');
+  classificationList.appendChild(renderListClassification(computeStats(data)));
 
-  // Adicionar um evento de clique ao overlay para fechar o modal
-  overlay.addEventListener('click', () => {
-    window.closeModal(id);
-    viewEl.body.removeChild(overlay); // Remover o overlay quando o modal for fechado
-  });
-}
+  //modal
+  window.closeModal = (id) => {
+    const modal = viewEl.querySelector("#modal-" + id);
+    modal.style.display = "none";
+  }
+  window.openModal = (id) => {
+    const modal = viewEl.querySelector("#modal-" + id);
+    modal.style.display = "block";
+    // Criar e adicionar o elemento de fundo transparente
+    const overlay = viewEl.createElement('div');
+    overlay.classList.add('modal-overlay');
+    viewEl.body.appendChild(overlay);
 
-return viewEl;
+    // Adicionar um evento de clique ao overlay para fechar o modal
+    overlay.addEventListener('click', () => {
+      window.closeModal(id);
+      viewEl.body.removeChild(overlay); // Remover o overlay quando o modal for fechado
+    });
+  }
+
+  return viewEl;
 
 
 }
