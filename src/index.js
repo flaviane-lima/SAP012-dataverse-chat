@@ -1,16 +1,20 @@
 // En este archivo definirás tus rutas e importarás los componentes que vas a renderizar.
-import Error from './views/Error.js';
 
-import Home from './views/Home.js';
 // ... import other views
+import home from './views/Home.js';
+import chaveApi from './views/ChaveApi.js';
+import error from './views/error.js';
+
+
+//... import das funções do router
 import { setRootEl, setRoutes, onURLChange } from './router.js';
 
 // Defina suas rotas e suas visualizações associadas
 const routes = {
-  "/": Home,
-  // '/chatIndividual': ChatIndividual,
+  "/": home,
+  "/ChaveApi": chaveApi,
   // '/chatEmGrupo' : ChatEmGrupo,
-  "/error": Error,
+  "/Error": error,
 };
 
 
