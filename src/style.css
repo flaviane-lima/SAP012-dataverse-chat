@@ -6,7 +6,7 @@
 }
 body,
 html {
-  background: #000000;
+  /* background: #000000; */
   /* height: 100vh;  */
   overflow: hidden; /*Isso remove a barra de rolagem do body */
   height: 100vh; /* Isso define a altura do body para a altura da janela de visualização */
