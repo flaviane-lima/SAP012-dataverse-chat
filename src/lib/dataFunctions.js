@@ -1,3 +1,9 @@
+export const filterById = (data, value) => {
+  const selecaoId = data.filter(item => {
+    return item["id"] === value;
+  });
+  return selecaoId[0];
+};
 
 export const filterBy = (data, filterBy, value) => {
 
