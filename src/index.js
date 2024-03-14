@@ -4,6 +4,8 @@
 import home from './views/Home.js';
 import chaveApi from './views/ChaveApi.js';
 import error from './views/error.js';
+import chatIndividual from './views/chatIndividual.js';
+import chatGrupo from './views/chatgrupo.js';
 
 
 //... import das funções do router
@@ -12,9 +14,10 @@ import { setRootEl, setRoutes, onURLChange } from './router.js';
 // Defina suas rotas e suas visualizações associadas
 const routes = {
   "/": home,
-  "/ChaveApi": chaveApi,
-  // '/chatEmGrupo' : ChatEmGrupo,
-  "/Error": error,
+  "/chave-api": chaveApi,
+  '/chat-grupo' : chatGrupo,
+  "/chat-individual": chatIndividual,
+  "/error": error,
 };
 
 
