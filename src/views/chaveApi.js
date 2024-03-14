@@ -11,21 +11,46 @@ export default function chaveApi(props) {
   <button id="salvarOuDeletarChave" type="button">Salvar</button>
 </main>`;
 
-const button = viewEl.querySelector('#salvarOuDeletarChave'); // Use querySelector em vez de getElementById
-  const chaveSalva = getApiKey()
+
+// const button = viewEl.querySelector('#salvarOuDeletarChave');
+// const chaveSalva = getApiKey();
+
+// if (chaveSalva) {
+//   button.textContent = 'Deletar';
+// }
+
+// button.addEventListener('click', function() {
+//   const chave = viewEl.querySelector('#chave').value;
+
+//   if (getApiKey()) {
+//     removeApiKey();
+//     button.textContent = 'Salvar'; // Atualiza o texto do botão após remover a chave
+//   } else {
+//     setApiKey(chave);
+//     button.textContent = 'Deletar';
+//   }
+// });
+
+// return viewEl;
+// }
+const button = viewEl.querySelector('#salvarOuDeletarChave');
+  const chaveSalva = getApiKey();
+  const input = viewEl.querySelector('#chave');
+  input.value = chaveSalva || ''; // Define o valor do input para a chave salva, se existir
 
   if (chaveSalva) {
     button.textContent = 'Deletar';
   }
 
   button.addEventListener('click', function() {
-    const chave = viewEl.querySelector('#chave').value; // Use .value para obter o valor do input
+    const chave = input.value;
 
     if (getApiKey()) {
-      removeApiKey(); // remove a chave-api'
+      removeApiKey();
       button.textContent = 'Salvar';
+      input.value = ''; // Limpa o valor do input
     } else {
-      setApiKey(chave); // Corrija a variável para 'chave'
+      setApiKey(chave);
       button.textContent = 'Deletar';
     }
   });
