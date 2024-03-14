@@ -109,6 +109,20 @@ export default function home(props) {
     });
   }
 
+  //para fazer conexão com o chat 
+  const botoesChat = viewEl.getElementsByClassName('chat');
+
+  for (let index = 0; index < botoesChat.length; index++) {
+    const botao = botoesChat[index];
+    botao.addEventListener('click', (event) =>{
+      const animeId = event.target.dataset.id;
+      // const props = {id:animeId};
+      window.location.href = window.location.origin + '/chat-individual?id=' + animeId;
+      // window.navigateToPage('/Chat', props);
+    });
+  }
+  
+
   return viewEl;
 
 
