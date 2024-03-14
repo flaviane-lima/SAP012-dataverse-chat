@@ -18,7 +18,7 @@ export const renderItems = (data) => {
         <p class="avaliacao"><span itemprop="assessment">${ratingValue}</span> ${ratingStars}</p>
         <p class="temporadasPlataforma"><span itemprop="seasons">${item.extraInfo.seasons}</span> Temporada${(item.extraInfo.seasons>1)?'s':''} - <span itemprop="streaming">${item.extraInfo.streaming}</span></p>
         <button class="botaoModal" onclick="openModal('${item.id}')">Curiosidades</button>
-        <button class="chat" onclick="">Chat</button>
+        <button class="chat" data-id="${item.id}">Chat</button>
       </section>
       <section class="curiosidades" id="modal-${item.id}">
         <span class="close" onclick="closeModal('${item.id}')">&times;</span>
