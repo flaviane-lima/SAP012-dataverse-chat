@@ -286,7 +286,7 @@ footer {
   position: fixed;
   bottom: 0;
   margin-top: 3px;
-  height: 2vh;
+  height: 3vh;
 }
 footer p {
   color: #000000;
@@ -318,5 +318,8 @@ footer p {
     max-width: 220px; /* Largura máxima */
   }
 }
+
+
+
 
 
