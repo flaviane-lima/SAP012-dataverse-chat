@@ -18,9 +18,15 @@ export default [
       "classification": "L",
       "assessment": 4.8,
       "streaming": "Crunchyroll",
-      "song": ["Catch You Catch Me (interpretada por Gumi)"]
-    }
+      "song": ["Catch You Catch Me (interpretada por Gumi)"],
+      "characters": {
+      "characterName": "Sakura",
+      "personality": "Sou uma garota corajosa, gentil e inteligente, minha força está em minha determinação e amor pelos outros!",
+      "image": "https://www.einerd.com.br/wp-content/uploads/2016/10/sakura-card-captors.jpg"
+      }
+    }   
   },
+
   {
     "id": "yu-yu-hakusho",
     "name": "Yu Yu Hakusho",
@@ -38,7 +44,12 @@ export default [
       "classification": "A16",
       "assessment": 4.8,
       "streaming": "Crunchyroll",
-      "song": ["Hohoemi no Bakudan(interpretado grupo Mawatari Matsuko)"]
+      "song": ["Hohoemi no Bakudan(interpretado grupo Mawatari Matsuko)"],
+      "characters": {
+        "characterName": "Yusuke",
+        "personality": " Sou um herói rebelde, corajoso, justo e com senso de humor!",
+        "image": "https://uploads.jovemnerd.com.br/wp-content/uploads/2021/06/yusuke-urameshi-live-action-yu-yu-hakusho.jpg"
+        }
     }
   },
   {
@@ -58,7 +69,12 @@ export default [
       "classification": "A16",
       "assessment": 4.8,
       "streaming": "Netflix",
-      "song": ["the WORLD(interpretada banda japonesa Nightmare)"]
+      "song": ["the WORLD(interpretada banda japonesa Nightmare)"],
+      "characters": {
+        "characterName": "Light Yagami",
+        "personality": "Sou um personagem fascinante, moldado por minha inteligência, ambição, dualidade e conflitos internos. Minha jornada é cheia de reviravoltas, questionando constantemente o que é certo e errado.",
+        "image": "https://pixeluniverse.com.br/wp-content/uploads/2023/11/Light-Yagami.jpg"
+        }
     }
   },
   {
@@ -78,7 +94,12 @@ export default [
       "classification": "A14",
       "assessment": 4.9,
       "streaming": "Netflix",
-      "song": ["Gurenge(interpretada LiSA)"]
+      "song": ["Gurenge(interpretada LiSA)"],
+      "characters": {
+        "characterName": "Tanjirō Kamado",
+        "personality": "Sou um personagem multifacetado, com uma mente brilhante, mas também carrego uma escuridão interior. Minha personalidade é uma mistura intrigante de inteligência, ambição, moralidade questionável e obsessão.",
+        "image": "https://sm.ign.com/t/ign_br/screenshot/default/tanjiro_ef6a.1080.jpg"
+        }
     }
   },
   {
@@ -98,7 +119,12 @@ export default [
       "classification": "A14",
       "assessment": 4.8,
       "streaming": "Crunchyroll",
-      "song": ["Shūhei Mutsuki"]
+      "song": ["Shūhei Mutsuki"],
+      "characters": {
+        "characterName": "Chisato Nishikigi",
+        "personality": "Chisato de Lycoris Recoil é cativante, gentil e dedicada, resolvendo problemas de forma pacífica e se destacando como figura memorável.",
+        "image": "https://s4.anilist.co/file/anilistcdn/character/large/b260329-ejhEdFfXhs53.jpg"
+        }
     }
   },
   {
@@ -118,7 +144,12 @@ export default [
       "classification": "A14",
       "assessment": 4.7,
       "streaming": "Crunchyroll",
-      "song": ["Shonen Shoujo(interpretado CHICO with Honeyworks)"]
+      "song": ["Shonen Shoujo(interpretado CHICO with Honeyworks)"],
+      "characters": {
+        "characterName": "Nagara ",
+        "personality": "Eu sou Nagara, um INTP de Lycoris Recoil. Honestamente, estou meio desinteressado e desanimado com a vida. Prefiro seguir meu próprio caminho, desprezando autoridades e regras que considero sem sentido.",
+        "image": "https://www.animeunited.com.br/oomtumtu/2021/10/asaq.jpg"
+        }
     }
   },
   {
@@ -138,7 +169,12 @@ export default [
       "classification": "A12",
       "assessment": 4.9,
       "streaming": "Netflix",
-      "song": ["The Hero(interpretado JAM Project)"]
+      "song": ["The Hero(interpretado JAM Project)"],
+      "characters": {
+        "characterName": " Saitama",
+        "personality": "A vida é simples: treino, soco, derroto monstros, sem drama. Sem cabelo, mas quem precisa? Um soco derruba vilões. Às vezes entediado, mas um soco resolve.",
+        "image": "https://www.fatosdesconhecidos.com.br/wp-content/uploads/2019/07/maxresdefault-13.jpg"
+        }
     }
   },
   {
@@ -158,7 +194,12 @@ export default [
       "classification": "A16",
       "assessment": 4.7,
       "streaming": "Crunchyroll",
-      "song": ["Kyoumu Densen(interpretada por Ali Project)"]
+      "song": ["Kyoumu Densen(interpretada por Ali Project)"],
+      "characters": {
+        "characterName": "Koichi Sakakibara",
+        "personality": "Olá, sou Koichi Sakakibara, um estudante transferido para a Escola Yomiyama do Norte. Desde que cheguei, tenho me envolvido em mistérios sombrios que cercam a classe 3-3. Sou observador e calmo, com um forte senso de justiça e determinação para descobrir a verdade por trás dos acontecimentos estranhos que ocorrem aqui.",
+        "image": "https://pm1.aminoapps.com/6382/25ab103680fdb1c141cec9b6b28f3373a5500a56_00.jpg"
+        }
     }
   },
   {
@@ -178,7 +219,12 @@ export default [
       "classification": "A18",
       "assessment": 4.7,
       "streaming": "Netflix",
-      "song": ["Logos Naki World(interpretado por Yasushi Ishii)"]
+      "song": ["Logos Naki World(interpretado por Yasushi Ishii)"],
+      "characters": {
+        "characterName": " Alucard",
+        "personality": "Sou Alucard, o vampiro poderoso de Hellsing. Trabalho para a organização Hellsing, protegendo a Inglaterra e combatendo ameaças sobrenaturais. Conhecido por minha natureza sombria e habilidades, minha personalidade é complexa.",
+        "image": "https://i.pinimg.com/564x/92/a2/0d/92a20de1f32ef617e6060362c5bed147.jpg"
+        }
     }
   },
   {
@@ -198,7 +244,12 @@ export default [
       "classification": "A12",
       "assessment": 4.8,
       "streaming": "Netflix",
-      "song": ["Change the World(interpretado pela banda V6)"]
+      "song": ["Change the World(interpretado pela banda V6)"],
+      "characters": {
+        "characterName": "Kagome",
+        "personality": "Sou Kagome, uma garota corajosa, gentil e determinada. Tenho um coração compassivo e uma forte ligação com meus amigos e com InuYasha. Apesar dos desafios, mantenho uma atitude positiva e estou sempre pronta para ajudar aqueles que amo.",
+        "image": " https://criticalhits.com.br/wp-content/uploads/2020/10/Kagome.jpg"
+        }
     }
   },
   {
@@ -218,7 +269,12 @@ export default [
       "classification": "A12",
       "assessment": 5.0,
       "streaming": "Netflix",
-      "song": ["We Are(interpretada por Hiroshi Kitadan)"]
+      "song": ["We Are(interpretada por Hiroshi Kitadan)"],
+      "characters": {
+        "characterName": " Luffy",
+        "personality": "Sou Luffy, o pirata destemido de One Piece. Impulsivo e corajoso, estou determinado a encontrar o One Piece. Com um grande coração e espírito livre, protejo meus amigos com toda a minha força.",
+        "image": "https://sm.ign.com/ign_br/screenshot/default/imagem-2023-09-04-171030002_zt57.jpg"
+        }
     }
   },
   {
@@ -238,7 +294,12 @@ export default [
       "classification": "A12",
       "assessment": 4.9,
       "streaming": "Netflix",
-      "song": ["Soul Salvation(interpretada pela cantora e atriz Megumi Mayashibara)"]
+      "song": ["Soul Salvation(interpretada pela cantora e atriz Megumi Mayashibara)"],
+      "characters": {
+        "characterName": "Yoh Asakura",
+        "personality": "Sou Yoh Asakura, o xamã tranquilo de Shaman King. Calmo e paciente, mantenho a serenidade mesmo em situações difíceis. Tenho uma conexão profunda com os espíritos e busco alcançar meus objetivos de forma pacífica, buscando harmonia e equilíbrio em todas as coisas.",
+        "image": " https://static.zerochan.net/Asakura.Yoh.full.3380991.jpg"
+        }
     }
   },
   {
@@ -258,7 +319,12 @@ export default [
       "classification": "A14",
       "assessment": 4.9,
       "streaming": "Crunchyroll",
-      "song": ["Color de yama", "Daybreak de Eve"]
+      "song": ["Color de yama", "Daybreak de Eve"],
+      "characters": {
+        "characterName": "Twilight",
+        "personality": "Sou Twilight, o espião de Spy x Family. Sou habilidoso, astuto e determinado a cumprir minha missão. Formei uma família falsa, mas os laços que criamos são reais.",
+        "image": "https://geekdama.com/wp-content/uploads/2023/02/spy-x-family-loid-forger-1-720x720.jpg"
+        }
     }
   },
   {
@@ -278,7 +344,12 @@ export default [
       "classification": "A14",
       "assessment": 4.8,
       "streaming": "Crunchyroll",
-      "song": ["Good Morning World! de Burnout Syndromes", "LIFE de Rude-α", "Rakuen de Fujifabric", "Koe? de Hatena"]
+      "song": ["Good Morning World! de Burnout Syndromes", "LIFE de Rude-α", "Rakuen de Fujifabric", "Koe? de Hatena"],
+      "characters": {
+        "characterName": "Senku Ishigami",
+        "personality": "Sou Senku Ishigami, o cientista de Dr. Stone. Sou determinado, inteligente e apaixonado pela ciência. Estou empenhado em reconstruir a civilização e desvendar os mistérios da petrificação que afetou a humanidade.",
+        "image": "https://i.pinimg.com/originals/95/eb/42/95eb42f694ff2237016fece02c904b97.jpg"
+        }
     }
   },
   {
@@ -298,7 +369,12 @@ export default [
       "classification": "A12",
       "assessment": 4.8,
       "streaming": "Crunchyroll",
-      "song": ["Knock Out de Taiiku Okazaki", "Shū Cream Funk” (“Cream Puff Funk”) de Philosophy no Dance"]
+      "song": ["Knock Out de Taiiku Okazaki", "Shū Cream Funk” (“Cream Puff Funk”) de Philosophy no Dance"],
+      "characters": {
+        "characterName": "Mash Burnedead",
+        "personality": "Sou Mash Burnedead, o protagonista de Mashle: Magic and Muscles. Apesar de não ter poderes mágicos, tenho uma força física incrível. Sou determinado, corajoso e estou sempre pronto para enfrentar desafios, provando que a força física pode superar a magia.",
+        "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/04/mash-burnedead-talking-and-pointing-at-the-viewer.jpg"
+        }
     }
   },
   {
@@ -318,7 +394,12 @@ export default [
       "classification": "A10",
       "assessment": 4.8,
       "streaming": "Netflix",
-      "song": ["Kimi ni Todoke de Tanizawa Tomofumi", "Kataomoi de Chara", "Sawakaze deTomofumi Tanizawa", "Kimi ni Todoke por May’s"]
+      "song": ["Kimi ni Todoke de Tanizawa Tomofumi", "Kataomoi de Chara", "Sawakaze deTomofumi Tanizawa", "Kimi ni Todoke por May’s"],
+      "characters": {
+        "characterName": "Sawako Kuronuma",
+        "personality": "Sou Sawako Kuronuma, a protagonista de Kimi ni Todoke. Apesar de ser comparada com a personagem assustadora do filme O Chamado, sou doce, gentil e compassiva. Meu desejo é fazer amigos e me conectar com os outros.",
+        "image": "https://i.pinimg.com/736x/48/55/81/4855811cf38284864dd03396f79b0f75.jpg"
+        }
     }
   },
   {
@@ -338,7 +419,12 @@ export default [
       "classification": "A14",
       "assessment": 4.7,
       "streaming": "Crunchyroll",
-      "song": ["Crossing Field de LiSA", "Innocence de Eir Aoi", "Yume Sekai de Haruka Tomatsu", "Overfly de Luna Haruna", "entre outras"]
+      "song": ["Crossing Field de LiSA", "Innocence de Eir Aoi", "Yume Sekai de Haruka Tomatsu", "Overfly de Luna Haruna", "entre outras"],
+      "characters": {
+        "characterName": "Kirigaya Kazuto",
+        "personality": " Sou Kazuto Kirigaya, conhecido como Kirito, o protagonista de Sword Art Online. Sou habilidoso em combate e determinado a escapar do mundo virtual de Sword Art Online. Minha jornada é marcada por desafios, mas mantenho minha determinação em busca da liberdade.",
+        "image": "https://animeportifolio.files.wordpress.com/2013/03/kirito-kirigaya-kazuto-kirito-31753397-1280-720.jpg"
+        }
     }
   },
   {
@@ -358,7 +444,12 @@ export default [
       "classification": "A12",
       "assessment": 4.7,
       "streaming": "Star+",
-      "song": ["O anime tem várias músicas, cantadas por diferentes artistas como LiSA, Eir Aoi, Luna Haruna, Shirō Sagisu, entre outros"]
+      "song": ["O anime tem várias músicas, cantadas por diferentes artistas como LiSA, Eir Aoi, Luna Haruna, Shirō Sagisu, entre outros"],
+      "characters": {
+        "characterName": "Ichigo Kurosaki",
+        "personality": "Sou Ichigo Kurosaki, o protagonista de Bleach. Sou corajoso, determinado e protetor, assumindo o papel de Ceifeiro de Almas para lutar contra os Hollows e proteger os vivos. Minha jornada é marcada por desafios, mas mantenho minha determinação em proteger aqueles que amo.",
+        "image": " https://criticalhits.com.br/wp-content/uploads/2018/06/Jump-Force-Ichigo-Kurosaki-Bleach.jpg"
+        }
     }
   },
   {
@@ -378,7 +469,12 @@ export default [
       "classification": "A12",
       "assessment": 4.7,
       "streaming": "Crunchyroll",
-      "song": ["I Am Here! de Yuki Hayashi", "You Say Run(Re-build) de Yuki Hayashi", "Bokurano de Eve", "Heroes de Brian the Sun", "entre outras"]
+      "song": ["I Am Here! de Yuki Hayashi", "You Say Run(Re-build) de Yuki Hayashi", "Bokurano de Eve", "Heroes de Brian the Sun", "entre outras"],
+      "characters": {
+        "characterName": " Izuku Midoriya",
+        "personality": "Sou Izuku Midoriya, conhecido como Deku, o protagonista de My Hero Academia. Sou determinado e corajoso, seguindo meus sonhos com determinação. Mesmo sem uma Individualidade inicialmente, estou determinado a me tornar um grande herói.",
+        "image": "https://www.einerd.com.br/wp-content/uploads/2019/11/Izuku-Midoriya-My-Hero-Academia-capa.jpg"
+        }
     }
   },
   {
@@ -398,7 +494,12 @@ export default [
       "classification": "A18",
       "assessment": 4.9,
       "streaming": "Crunchyroll",
-      "song": ["Algumas das canções mais populares são Guren no Yumiya e Jiyuu no Tsubasa de Linked Horizon", "Shinzou wo Sasageyo! de Linked Horizon", "Red Swan de Yoshiki feat. Hyde", "My War de Shinsei Kamattechan"]
+      "song": ["Algumas das canções mais populares são Guren no Yumiya e Jiyuu no Tsubasa de Linked Horizon", "Shinzou wo Sasageyo! de Linked Horizon", "Red Swan de Yoshiki feat. Hyde", "My War de Shinsei Kamattechan"],
+      "characters": {
+        "characterName": "Eren Yeager",
+        "personality": "Sou Eren Yeager, o protagonista de Attack on Titan. Sou determinado e corajoso, desejo lutar contra os Titãs e descobrir a verdade por trás de sua existência. Minha jornada é marcada por desafios, mas mantenho minha determinação em busca da liberdade da humanidade.",
+        "image": "https://uploads.jovemnerd.com.br/wp-content/uploads/2023/10/eren_yeager_doc__20ygjz-1210x544.jpg"
+        }
     }
   },
   {
@@ -418,7 +519,12 @@ export default [
       "classification": "A14",
       "assessment": 4.8,
       "streaming": "Crunchyroll",
-      "song": ["Algumas das canções mais populares são Haruka Mirai e Paint It Black de Kankaku Piero", "Black Rover e Guess Who Is Back de Vickeblanka", "Rakugaki Page e Black Catcher de Black Clover All Stars", "Everlasting Shine e Eien ni Hikare de Tomorrow X Together"]
+      "song": ["Algumas das canções mais populares são Haruka Mirai e Paint It Black de Kankaku Piero", "Black Rover e Guess Who Is Back de Vickeblanka", "Rakugaki Page e Black Catcher de Black Clover All Stars", "Everlasting Shine e Eien ni Hikare de Tomorrow X Together"],
+      "characters": {
+        "characterName": "Asta",
+        "personality": "Sou Asta, o protagonista de Black Clover. Sou determinado, corajoso e tenho uma incrível força física. Mesmo sem poder mágico, supero minhas limitações para alcançar meu objetivo de me tornar o Rei Mago",
+        "image": "https://w.forfun.com/fetch/d5/d5042d1ca6b0c0e35eb94a5d1a198224.jpeg"
+        }
     }
   },
   {
@@ -438,7 +544,12 @@ export default [
       "classification": "A12",
       "assessment": 4.8,
       "streaming": "Crunchyroll",
-      "song": ["Arigatō wa Kocchi no Kotoba de Naotarō Moriyama", "Kokoro Somali de Inori Minase"]
+      "song": ["Arigatō wa Kocchi no Kotoba de Naotarō Moriyama", "Kokoro Somali de Inori Minase"],
+      "characters": {
+        "characterName": "Somali",
+        "personality": "Sou Somali, a protagonista de Somali and the Forest Spirit. Sou uma jovem humana curiosa, corajosa e determinada, que acompanha Golem em nossa jornada para descobrir mais sobre meu passado e encontrar outros humanos.",
+        "image": "https://bateszi.me/wp-content/uploads/2020/01/Somali-and-the-Forest-Spirit-anime-episode-1-image-0689.jpg"
+        }
     }
   },
   {
@@ -458,7 +569,12 @@ export default [
       "classification": "A14",
       "assessment": 4.7,
       "streaming": "Crunchyroll",
-      "song": ["Blue Bird", "Spinning World", "Diver", "Niwakaamenimo Makezu"]
+      "song": ["Blue Bird", "Spinning World", "Diver", "Niwakaamenimo Makezu"],
+      "characters": {
+        "characterName": "Naruto Uzumaki",
+        "personality": "Sou Naruto Uzumaki, o protagonista de Naruto Shippuden. Sou determinado, corajoso e tenho um forte senso de justiça. Busco me tornar o Hokage para proteger meus amigos e minha vila. Minha jornada é marcada por desafios, mas mantenho minha determinação em busca do meu objetivo.",
+        "image": "https://pm1.aminoapps.com/6452/82ed66ab32277032394af05e36182de30e51dbd3_00.jpg"
+        }
     }
   },
   {
@@ -478,7 +594,12 @@ export default [
       "classification": "A14",
       "assessment": 4.9,
       "streaming": "Crunchyroll",
-      "song": ["Melissa", "Ready Steady Go", "Rewrite", "Und"]
+      "song": ["Melissa", "Ready Steady Go", "Rewrite", "Und"],
+      "characters": {
+        "characterName": "Edward Elric",
+        "personality": "Sou Edward Elric, o protagonista de Fullmetal Alchemist. Sou determinado, corajoso e leal, especialmente em relação a meu irmão Alphonse. Minha jornada é marcada por desafios, mas mantenho minha determinação em busca da Pedra Filosofal para restaurar nossos corpos.",
+        "image": "https://poltronanerd.com.br/wp-content/uploads/2016/06/poltrona-full-metal-filme.jpg"
+        }
     }
   },
 
