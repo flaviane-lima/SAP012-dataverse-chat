@@ -7,7 +7,7 @@ import { renderListClassification } from '../components/estatistica.js';
 let dadosExibidos = data;
 
 
-export default function home(props) {
+export default function home() {
   const viewEl = document.createElement('div');
   viewEl.innerHTML = `<section class="menu">
 <section id="filtro">
