@@ -1,4 +1,3 @@
-
 let ROUTES = {};
 let rootEl;
 
@@ -6,10 +5,13 @@ const ERRORPATH = '/error'
 
 export const setRootEl = (el) => {
   // atribui rootEl
-
+  if (typeof el !== 'object'){
+    throw new Error('root el precisa ser um objeto')
+  }
   rootEl = el;
 
 }
+
 
 export const setRoutes = (routes) => {
   // optional Throw errors if routes isn't an object
@@ -77,7 +79,7 @@ export const navigateTo = (pathname, props = {}) => {
 // }
 export const onURLChange = (location) => {
   // analisa a localização do nome do caminho e dos parâmetros de pesquisa e converte os parâmetros de pesquisa em um objeto
-  const props =queryStringToObject(location.search);
+  const props = queryStringToObject(location.search);
   // renderiza a view com o caminho e o objeto
   renderView(location.pathname, props);
 }
