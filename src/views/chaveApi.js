@@ -1,7 +1,7 @@
 import { getApiKey, setApiKey, removeApiKey } from "../lib/apiKey.js";
 
 
-export default function chaveApi(props) {
+export default function chaveApi() {
   const viewEl = document.createElement('div');
   viewEl.innerHTML = `<main>
   <h3>Administrador de chave de API</h3>
@@ -12,28 +12,28 @@ export default function chaveApi(props) {
 </main>`;
 
 
-// const button = viewEl.querySelector('#salvarOuDeletarChave');
-// const chaveSalva = getApiKey();
+  // const button = viewEl.querySelector('#salvarOuDeletarChave');
+  // const chaveSalva = getApiKey();
 
-// if (chaveSalva) {
-//   button.textContent = 'Deletar';
-// }
+  // if (chaveSalva) {
+  //   button.textContent = 'Deletar';
+  // }
 
-// button.addEventListener('click', function() {
-//   const chave = viewEl.querySelector('#chave').value;
+  // button.addEventListener('click', function() {
+  //   const chave = viewEl.querySelector('#chave').value;
 
-//   if (getApiKey()) {
-//     removeApiKey();
-//     button.textContent = 'Salvar'; // Atualiza o texto do botão após remover a chave
-//   } else {
-//     setApiKey(chave);
-//     button.textContent = 'Deletar';
-//   }
-// });
+  //   if (getApiKey()) {
+  //     removeApiKey();
+  //     button.textContent = 'Salvar'; // Atualiza o texto do botão após remover a chave
+  //   } else {
+  //     setApiKey(chave);
+  //     button.textContent = 'Deletar';
+  //   }
+  // });
 
-// return viewEl;
-// }
-const button = viewEl.querySelector('#salvarOuDeletarChave');
+  // return viewEl;
+  // }
+  const button = viewEl.querySelector('#salvarOuDeletarChave');
   const chaveSalva = getApiKey();
   const input = viewEl.querySelector('#chave');
   input.value = chaveSalva || ''; // Define o valor do input para a chave salva, se existir
@@ -42,7 +42,7 @@ const button = viewEl.querySelector('#salvarOuDeletarChave');
     button.textContent = 'Deletar';
   }
 
-  button.addEventListener('click', function() {
+  button.addEventListener('click', function () {
     const chave = input.value;
 
     if (getApiKey()) {
