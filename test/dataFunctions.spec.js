@@ -1,5 +1,25 @@
-import { filterBy, sortBy, computeStats } from '../src/lib/dataFunctions.js';
+import { filterBy, sortBy, computeStats, filterById } from '../src/lib/dataFunctions.js';
 import { data as fakeData, mockCrescente, mockDecrescente } from './data.js';
+
+describe('filterById', () => {
+  //será feito um array data ficticio
+  const data =[
+    {id : 1, extraInfo: {characters: {characterName: 'Nome1'}}},
+    {id : 2, extraInfo: {characters: {characterName: 'Nome2'}}},
+    {id : 3, extraInfo: {characters: {characterName: 'Nome3'}}}
+  ];
+  it('vai filtrar os nome dos animes pelo Id do anime ', () => { 
+    const value = 2; //vai filtrar pelo ID que quero filtrar 
+
+    const result = filterById(data,value);
+
+    // Verifica se o objeto retornado tem o ID correto
+    expect(result.id).toEqual(value);
+    // Verifica se o nome do personagem está correto
+    expect(result.extraInfo.characters.characterName).toBe("Nome2");
+  });
+  
+});
 
 describe('filterBy', () => {
   it('filtra dados por plataforma de streaming', () => {
