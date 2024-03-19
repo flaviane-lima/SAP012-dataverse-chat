@@ -2,6 +2,8 @@
 
 import { getApiKey, setApiKey, removeApiKey } from '../src/lib/apiKey.js';
 
+const mockApiKey = "123abc";
+
 const APIKEY = "chave-api";
 
 describe('ApiKey Functions', () => {
@@ -11,21 +13,21 @@ describe('ApiKey Functions', () => {
   });
 
   it('Deve definir corretamente o valor da chave API', () => {
-    const mockApiKey = "123abc";
+    
     setApiKey(mockApiKey);
 
     expect(localStorage.getItem(APIKEY)).toEqual(mockApiKey);
   });
 
   it('Deve retornar o valor da chave API', () => {
-    const mockApiKey = "123abc";
+    
     localStorage.setItem(APIKEY, mockApiKey);
 
     expect(getApiKey()).toEqual(mockApiKey);
   });
 
   it('Deve remover o valor da chave API', () => {
-    const mockApiKey = "123abc";
+   
     localStorage.setItem(APIKEY, mockApiKey);
     removeApiKey();
 
