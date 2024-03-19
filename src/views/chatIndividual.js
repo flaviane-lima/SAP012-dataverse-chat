@@ -9,6 +9,8 @@ export default function chatIndividual(props) {
   const dataAnime = filterById(data, props["id"]);
 
   const viewEl = document.createElement('div'); // Definir viewEl antes de usá-lo
+  viewEl.id = 'chat-individual-container'
+  
 
   viewEl.innerHTML = `
   <div class="chat-individual">
@@ -19,7 +21,7 @@ export default function chatIndividual(props) {
       </figure>
       <div>
       <h5 class="nomeAnime"><span>${dataAnime.extraInfo.characters.characterName}</span></h5>
-      <p> ${dataAnime.extraInfo.characters.personality}</p>
+      <p class="personalidade"> ${dataAnime.extraInfo.characters.personality}</p>
       </div>
       </div>
       <div class="conversação">
