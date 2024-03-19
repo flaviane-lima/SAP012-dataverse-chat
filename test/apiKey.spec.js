@@ -1,17 +1,41 @@
-// test/apiKey.spec.js
+//test/apiKey.spec.js
 
-// import { getApiKey, setApiKey } from '../src/lib/apiKey.js';
+import { getApiKey, setApiKey, removeApiKey } from '../src/lib/apiKey.js';
 
-// describe('getApiKey', () => {
+const APIKEY = "chave-api";
 
-//   it('debería devolver el valor de la API Key', () => {
-//     // Desarrolla el test correspondiente aquí
-//   });
-// });
+describe('ApiKey Functions', () => {
+  beforeEach(() => {
+    // Limpa o localStorage antes de cada teste
+    localStorage.clear();
+  });
 
-// describe('setApiKey', () => {
+  it('Deve definir corretamente o valor da chave API', () => {
+    const mockApiKey = "123abc";
+    setApiKey(mockApiKey);
 
-//   it('debería establecer correctamente la API Key', () => {
-//    // Desarrolla el test correspondiente aquí
-//   });
-// });
+    expect(localStorage.getItem(APIKEY)).toEqual(mockApiKey);
+  });
+
+  it('Deve retornar o valor da chave API', () => {
+    const mockApiKey = "123abc";
+    localStorage.setItem(APIKEY, mockApiKey);
+
+    expect(getApiKey()).toEqual(mockApiKey);
+  });
+
+  it('Deve remover o valor da chave API', () => {
+    const mockApiKey = "123abc";
+    localStorage.setItem(APIKEY, mockApiKey);
+    removeApiKey();
+
+    expect(localStorage.getItem(APIKEY)).toBeNull();
+  });
+});
+
+
+
+
+
+
+
