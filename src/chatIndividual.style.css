@@ -70,11 +70,13 @@ ul#chat-menssagem li {
 .mensagem-enviada{
   border: 1px solid #c3c2c3;
   border-radius: 10px;
+  background-color: #c3c2c3;
 }
 
 .mensagem-resposta{
   border: 1px solid #c3c2c3;
   border-radius: 10px;
+  background-color: #FFA500;
 
 }
 
