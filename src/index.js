@@ -30,10 +30,6 @@ window.addEventListener("DOMContentLoaded", () => {
   onURLChange(window.location);
 });
 
-// // Lidar com alterações de URL
-// window.addEventListener('popstate', ({objetivo}) => {
-//     onURLChange(/* location */);
-//  });
 
 // Atribuir as rotas
 setRoutes(routes);
