@@ -2,7 +2,7 @@
 
 // ... import other views
 import home from './views/Home.js';
-import chaveApi from './views/ChaveApi.js';
+import chaveApi from './views/chaveApi.js';
 import error from './views/error.js';
 import chatIndividual from './views/chatIndividual.js';
 // import chatGrupo from './views/chatgrupo.js';
