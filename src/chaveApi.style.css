@@ -1,0 +1,44 @@
+
+
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os elementos à esquerda */
+  justify-content: flex-start; /* Alinha os elementos ao topo */
+  width: 50%; /* Define a largura do contêiner */
+  margin-left: auto; /* Empurra o contêiner para o lado esquerdo */
+  margin-right: 72%;
+}
+
+
+h3 {
+  border: solid 2px blueviolet;
+  align-items: flex-start;
+  margin-right: 80%;
+}
+
+.texto {
+  border: solid 2px pink;
+  margin-right: 70%;
+}
+
+#chave {
+  margin-bottom: 10px;
+  height: 36px;
+  width: 60%;
+  margin-left: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#salvarOuDeletarChave {
+  background-color: #FFA500;
+  font-size: 14px;
+  margin-bottom: 10px;
+  height: 30px;
+  width: 14%;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
