@@ -42,12 +42,7 @@ export default function home() {
 <section id="caixa-card"></section>
 </main>`;
 
-  // const exibirCartao = viewEl.querySelector('#root');
-  // console.log(exibirCartao);
-  // viewEl.addEventListener("DOMContentLoaded", () => {
-  //   exibirCartao.appendChild(renderItems(data))
-
-  // })
+  
   //neste caso está redenrisando o cartão não foi preciso o uso  do addEventListener
   const exibirCartao = viewEl.querySelector('#caixa-card');
   exibirCartao.appendChild(renderItems(data))
@@ -129,5 +124,4 @@ export default function home() {
 }
 
 
-// src/views/About.js
 
