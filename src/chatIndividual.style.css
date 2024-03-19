@@ -14,7 +14,6 @@
   height: 86vh; /* Define a altura do contêiner como 100% da altura da janela */
   margin-top: 15px;
   padding: 20px;
-  /*box-sizing: border-box;  Garante que o padding não aumente a largura total do contêiner */
   display: flex;
   flex-direction: column;
   
