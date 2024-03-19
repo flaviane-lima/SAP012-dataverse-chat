@@ -27,11 +27,13 @@ export const setRoutes = (routes) => {
 }
 
 const queryStringToObject = (queryString) => {
+  
   // converter string de consulta em URLSearchParam
   // converter URLSearchParams em um objeto
   // devolver o objeto
   const urlParametros = new URLSearchParams(queryString);
   return Object.fromEntries(urlParametros.entries());
+  
 }
 
 const renderView = (pathname, props = { name: " ", id: "" }) => {
@@ -78,8 +80,12 @@ export const navigateTo = (pathname, props = {}) => {
 //   renderView(pathname, props);
 // }
 export const onURLChange = (location) => {
+  // console.log('Search:', location.search);
+  // console.log('Pathname:', location.pathname);
+  // console.log(rootEl,renderView);
   // analisa a localização do nome do caminho e dos parâmetros de pesquisa e converte os parâmetros de pesquisa em um objeto
   const props = queryStringToObject(location.search);
+ 
   // renderiza a view com o caminho e o objeto
   renderView(location.pathname, props);
 }
