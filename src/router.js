@@ -4,10 +4,11 @@ let rootEl;
 const ERRORPATH = '/error'
 
 export const setRootEl = (el) => {
-  // atribui rootEl
+  
   if (typeof el !== 'object'){
     throw new Error('root el precisa ser um objeto')
   }
+  // atribui rootEl
   rootEl = el;
 
 }
@@ -63,22 +64,13 @@ export const navigateTo = (pathname, props = {}) => {
   // atualizar o histórico da janela com pushState
   // renderize a visualização com o nome do caminho e adereços
   const url = new URL(location);
-  // url.searchParams.set(pathname, props={});
+  
   url.pathname = pathname;
   url.search = new URLSearchParams(props).toString();
   history.pushState({}, "", url);
   renderView(pathname, props);
 }
 
-// export const onURLChange = () => {
-
-//   // analisa a localização do nome do caminho e dos parâmetros de pesquisa
-//   const { pathname, search } = window.location
-//   //  converte os parâmetros de pesquisa em um objeto
-//   const props = queryStringToObject(search);
-//   // renderiza a view com o caminho e o objeto
-//   renderView(pathname, props);
-// }
 export const onURLChange = (location) => {
   // console.log('Search:', location.search);
   // console.log('Pathname:', location.pathname);
