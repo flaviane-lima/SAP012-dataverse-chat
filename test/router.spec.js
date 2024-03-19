@@ -134,7 +134,7 @@ describe('onURLChange', () => {
       // "/chat-individual": chatIndividual,
       "/chat-individual": () => {
         
-        console.log("teste");
+        // console.log("teste");
         const div = document.createElement("div");
         div.innerHTML = "chat-individual";
         return div;
