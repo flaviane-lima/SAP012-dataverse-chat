@@ -20,7 +20,7 @@ export default function chatIndividual(props) {
         <img class="imgAnime"  src="${dataAnime.extraInfo.characters.image}"  title="imagem ${dataAnime.extraInfo.characters.characterName}protagonista do ${dataAnime.name}">
       </figure>
       <div>
-      <h5 class="nomeAnime"><span>${dataAnime.extraInfo.characters.characterName}</span></h5>
+      <h5 class="personagem"><span>${dataAnime.extraInfo.characters.characterName}</span></h5>
       <p class="personalidade"> ${dataAnime.extraInfo.characters.personality}</p>
       </div>
       </div>
