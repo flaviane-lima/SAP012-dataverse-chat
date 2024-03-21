@@ -113,13 +113,15 @@ describe('onURLChange', () => {
     rootEl = document.createElement('div');
     setRootEl(rootEl);
 
-    //está adicionado novos elementos recém-criado ao corpo do documento HTML.
+    //está adicionando novos elementos recém-criado ao corpo do documento HTML.
     document.body.appendChild(rootEl);
 
     //criando um "spay" que é um tipo de espião 
     // renderView = jest.fn();
     // queryStringToObject = jest.fn();
 
+
+    //simulando as rotas e criando elementos para a rota..
     const routes = {
       "/": () => {
         const div = document.createElement("div");
@@ -141,11 +143,11 @@ describe('onURLChange', () => {
       }
     };
 
-
+    //atribuição das rotas.
     ROUTES = routes;
   });
 
-  //está para limpar o ambiente do teste e restaura as funções "espionadas" ("spy").
+  //está para limpando o ambiente do teste 
   afterAll(() => {
     document.body.removeChild(rootEl);
     // renderView();
