@@ -3,7 +3,7 @@ import { getApiKey, setApiKey, removeApiKey } from "../lib/apiKey.js";
 
 export default function chaveApi() {
   const viewEl = document.createElement('div');
-  viewEl.innerHTML = `<main>
+  viewEl.innerHTML = `<main class="caixa-api">
   <h3>Administrador de chave de API</h3>
   <p class="texto">A partir daqui você pode gerenciar a chave de API a ser usada</p>
   <label for="chave"></label>
