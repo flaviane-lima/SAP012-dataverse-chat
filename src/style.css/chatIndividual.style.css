@@ -1,0 +1,123 @@
+/* styles.css */
+
+/* Estilos padrão para o contêiner do chat */
+/* styles.css */
+
+/* Estilos padrão para o contêiner do chat */
+
+
+.chat-individual {
+
+  width: 100%;
+  max-width: 400px;
+  height: 80vh; /* Define a altura do contêiner como 100% da altura da janela */
+  margin-top: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.chat-container{
+  display: flex;
+  background-color: #d9d9d9;
+  flex-direction: row;
+  align-items: center;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+/* Estilos para a imagem do personagem */
+.chat-imagem {
+  padding-right: 8px;
+  text-align: center;
+ 
+}
+.imgAnime {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+/* Estilos para o nome do personagem */
+.personagem{
+  font-size: 12px;
+  margin: 3px;
+}
+
+.personalidade{
+  font-size: 10px;
+
+}
+
+/* Estilos para a conversa */
+.conversação {
+  max-height: 300px; /* Altura máxima para a área de conversa */
+  /* overflow-y: scroll; Adiciona uma barra de rolagem vertical quando necessário */
+}
+
+/* Estilos para as mensagens */
+ul#chat-menssagem {
+  list-style-type: none;
+  height: 50vh;
+  overflow-y: auto;
+}
+
+ul#chat-menssagem li {
+  
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.mensagem-enviada{
+  border-radius: 10px;
+  background-color: #c3c2c3;
+}
+
+.mensagem-resposta{
+  border-radius: 10px;
+  background-color: #FFA500;
+
+}
+
+.input-button{
+  display: flex;
+  margin-top: 55px;
+
+}
+input:focus{
+  outline: none;
+}
+
+.chat-input{
+  height: 30px;
+  width: 100%;
+  border-radius: 10px 0px 0px 10px;
+  padding: 5px;
+
+}
+.envio{
+  border-radius: 0px 10px 10px 0px;
+  background-color: #FFA500;
+  color: #ffffff;
+  font-size: 16px;
+  width: 80px;
+  border: none;
+}
+
+/* Estilos específicos para dispositivos com largura de tela até 600px (smartphones) */
+@media only screen and (max-width: 600px) {
+  .chat-individual {
+    padding: 10px;
+  }
+
+  /* .imgAnime { 
+    width: 45px;
+    height: 37px;
+  } */
+
+  /* .nomeAnime {
+    font-size: 16px;
+  } */
+}
