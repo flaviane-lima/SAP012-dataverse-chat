@@ -1,26 +1,22 @@
 * {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   box-sizing: border-box;
   font-family: Roboto Condensed;
 }
 body,
 html {
-  /* background: #000000; */
+  background: #000000;
   /* height: 100vh;  */
   overflow: hidden; /*Isso remove a barra de rolagem do body */
   height: 100vh; /* Isso define a altura do body para a altura da janela de visualização */
-  margin: 0;
-  padding: 0;
 }
 header {
+  background-color: black;
   display: flex;
   flex-direction: row;
+  max-width: 1140px;
   align-items: center;
-  position: relative;
-  width: 300px;
-  top: 5px;
-  left: 10px;
   height: 6vh;
 }
 header figure img {
@@ -37,6 +33,13 @@ header h1 {
   line-height: normal;
 }
 
+#botaoChaveApi{
+  
+}
+#botaorupo{
+
+}
+
 footer {
   background-color: #ffa500;
   width: 100%;
@@ -49,7 +52,7 @@ footer p {
   color: #000000;
   text-align: center;
   font-family: "Lily Script One";
-  font-size: 11px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
