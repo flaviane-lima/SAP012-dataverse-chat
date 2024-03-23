@@ -20,9 +20,12 @@ header {
   height: 6vh;
 }
 header figure img {
+  padding-top: 5px;
   width: 45px;
   height: 37px;
   margin: 8px;
+  position: relative;
+  left: 0;
 }
 header h1 {
   color: #ffa500;
@@ -31,13 +34,26 @@ header h1 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin: 0;
+}
+a.retorna-home {
+  margin: 0;
 }
 
-#botaoChaveApi{
-  
+#botaoChaveApi {
+  position: fixed;
+  right: 108px;
+  background: #d9d9d9;
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
 }
-#botaorupo{
-
+a#botaogrupo {
+  position: fixed;
+  right: 10px;
+  text-decoration: none;
+  color: orange;
 }
 
 footer {
