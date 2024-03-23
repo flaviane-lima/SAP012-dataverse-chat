@@ -52,6 +52,7 @@ export default function chatIndividual(props) {
     const ul = viewEl.querySelector('#chat-menssagem');
     //criar li dinamicamente
     const li = document.createElement('li');
+    //criando uma classe
     li.classList.add('mensagem-enviada');
     //recebendo conteudo do input
     li.innerHTML = `<span>${resposta}</span>`;
