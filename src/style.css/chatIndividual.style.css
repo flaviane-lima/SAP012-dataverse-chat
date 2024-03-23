@@ -9,7 +9,7 @@
 .chat-individual {
 
   width: 100%;
-  max-width: 400px;
+  /* max-width: 1440px; */
   height: 80vh; /* Define a altura do contêiner como 100% da altura da janela */
   margin-top: 15px;
   padding: 20px;
@@ -25,13 +25,13 @@
   align-items: center;
   padding: 3px;
   border-radius: 10px;
+
 }
 
 /* Estilos para a imagem do personagem */
 .chat-imagem {
   padding-right: 8px;
-  text-align: center;
- 
+  
 }
 .imgAnime {
   width: 45px;
@@ -54,6 +54,11 @@
 .conversação {
   max-height: 300px; /* Altura máxima para a área de conversa */
   /* overflow-y: scroll; Adiciona uma barra de rolagem vertical quando necessário */
+}
+
+.chat-respondendo{
+  display:block;
+  background-color: #FFA500;
 }
 
 /* Estilos para as mensagens */
@@ -84,11 +89,12 @@ ul#chat-menssagem li {
 .input-button{
   display: flex;
   margin-top: 55px;
+  width: 100%;
 
 }
-input:focus{
+/* input:focus{
   outline: none;
-}
+} */
 
 .chat-input{
   height: 30px;
@@ -112,12 +118,34 @@ input:focus{
     padding: 10px;
   }
 
-  /* .imgAnime { 
-    width: 45px;
-    height: 37px;
-  } */
+}
 
-  /* .nomeAnime {
-    font-size: 16px;
-  } */
+@media only screen and (min-width: 768px) {
+  .chat-individual {
+   width: 50vw;
+  }
+
+  .chat-container{
+    width: 50vw;
+  }
+
+  .input-button{
+    width: 50vw;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  .chat-individual {
+   width: 30vw;
+  }
+
+  .chat-container{
+    width: 30vw;
+  }
+
+  .input-button{
+    width: 30vw;
+  }
+
 }
