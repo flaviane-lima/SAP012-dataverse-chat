@@ -26,7 +26,9 @@ const routes = {
 const rootElement = document.getElementById('root')
 
 window.addEventListener("DOMContentLoaded", () => {
+  //referência ao elemento HTML que é definido como elemento raiz.
   setRootEl(rootElement);
+  //está lidando com mudança url após o carregamento completo do documento HTML.
   onURLChange(window.location);
 });
 
