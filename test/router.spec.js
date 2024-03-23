@@ -28,17 +28,20 @@ const routerFunctions = {
 };
 describe('setRootEl', () => {
   it('deve retornar erro se root element não for objeto', () => {
+    //argumento invalido para a função.
     const fakeRootEl = "testando o elemento";
 
 
-    // Verifique se a propriedade rootEl foi definida corretamente
+    //esperando que ao chamar o setRootEl com fakeRootEl lance um erro.
+    //pois o fakeRootEl é uma string e não objeto.
     expect(() => setRootEl(fakeRootEl)).toThrow('root el precisa ser um objeto');
   });
   it('deve retornar o  objeto', () => {
+    //criando uma 'div'
     const fakeRootEl = document.createElement('div');
 
 
-    // Verifique se a propriedade rootEl foi definida corretamente
+    //esperando que não lance um erro
     expect(() => setRootEl(fakeRootEl)).not.toThrow('root el precisa ser um objeto');
   });
 });
@@ -46,11 +49,11 @@ describe('setRootEl', () => {
 describe('setRoutes', () => {
   it('lança um erro se routes não for um objeto', () => {
     expect(() => {
-      setRoutes('not an object');
+      setRoutes('não é um objeto');
     }).toThrow('As rotas devem ser um objeto');
   });
 
-  it('lança um erro se routes não define uma rota /error', () => {
+  it('lança um erro se routes não for um objeto e define uma rota /error', () => {
     expect(() => {
       setRoutes({});
     }).toThrow('As rotas devem definir uma rota /error');
@@ -70,7 +73,8 @@ describe('setRoutes', () => {
       }
       // "/chat-individual": chatIndividual,
     };
-
+    //ele espera que não seja lançado uma mensagem defina rota error
+    //esperando que seja um objeto.
     expect(() => setRoutes(routes)).not.toThrow('As rotas devem definir uma rota /error');
   });
 });
@@ -79,6 +83,8 @@ describe('setRoutes', () => {
 describe('NavigateTo', () => {
   //Apenas verificar history.pushState garante que navigateTo está atualizando o histórico e, 
   //consequentemente, chamando renderView.
+
+  //armazena originalmente o método pushState
   let originalPushState;
 
   beforeAll(() => {
@@ -116,11 +122,6 @@ describe('onURLChange', () => {
     //está adicionando novos elementos recém-criado ao corpo do documento HTML.
     document.body.appendChild(rootEl);
 
-    //criando um "spay" que é um tipo de espião 
-    // renderView = jest.fn();
-    // queryStringToObject = jest.fn();
-
-
     //simulando as rotas e criando elementos para a rota..
     const routes = {
       "/": () => {
@@ -136,7 +137,6 @@ describe('onURLChange', () => {
       // "/chat-individual": chatIndividual,
       "/chat-individual": () => {
         
-        // console.log("teste");
         const div = document.createElement("div");
         div.innerHTML = "chat-individual";
         return div;
@@ -147,7 +147,7 @@ describe('onURLChange', () => {
     ROUTES = routes;
   });
 
-  //está para limpando o ambiente do teste 
+  //está limpando o ambiente do teste 
   afterAll(() => {
     document.body.removeChild(rootEl);
     // renderView();
