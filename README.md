@@ -10,14 +10,13 @@
 * [6. Protótipo de alta fidelidade](#6-protótipo-de-alta-fidelidade)
 * [7. Testes de usabilidade](#7-testes-de-usabilidade)
 * [8. Referência](#8-referência)
-* [9. Desenvolvido](#9-Desenvolvido)
-* [10. Finalizado](#10-finalizado)
+* [9. Desenvolvido](#4-desenvolvido)
+* [10. Estado do projeto](#5-estado-do-projeto)
 
 
 ## 1. Sobre o produto
 
-Esse produto foi idealizado para permiti uma interação entre o usuário e o anime, trazendo um mundo de magia que transforma o personagem do anime comunicativo que de certa forma, trás informações bastantes uteis que muitos usuário sempre teve vontade, e sou super fã de animes então acho muito legal ter uma resposta do que perguntar ao anime. Então esse produto trás versatilidade que antes era só sobre informações e agora o suário consegue interagir com o personagem através de um chat, além disso no mesmo site o usuário consegue verificar curiosidades sobre o anime, filtrar por plataforma de streaming e com toda essa usabilidade foi pensado na acessibilidade visul do produto.
-![Visualização do aplicativo](https://github-production-user-asset-6210df.s3.amazonaws.com/123121338/271433237-2bd1477b-15ef-49d4-9fcb-226b3263c46a.png)
+Esse produto foi idealizado para permiti uma interação entre o usuário e o anime, trazendo um mundo de magia que transforma o personagem do anime comunicativo que de certa forma, trás informações bastantes uteis, que muitos usuário sempre teve vontade, e sou super fã de animes então acho muito legal ter uma resposta do que perguntar ao anime. Então esse produto trás versatilidade que antes era só sobre informações e agora o suário consegue interagir com o personagem através de um chat, além disso no mesmo site o usuário consegue verificar curiosidades sobre o anime, filtrar por plataforma de streaming e com toda essa usabilidade foi pensado na acessibilidade visul do produto.
 
 ## 2. Resumo do projeto
 
@@ -91,66 +90,6 @@ Modelo de boilerplate
 |  └── example.spec.js
 ├── README.md
 └── package.json
-
-```
-
-### `src/components`
-
-Esta pasta conterá arquivos JavaScript que representam
-[componentes](https://lenguajejs.com/vuejs/componentes/que-es-un-componente/)
-reutilizáveis da sua aplicação. Esses componentes podem ser elementos
-da interface do usuário usados em várias partes da sua aplicação.
-Organizar seus componentes dessa maneira ajuda a manter um código
-mais modular e reutilizável.
-
-### `src/data`
-
-Nesta pasta estão os dados com os quais você vai trabalhar
-(dados de exemplo ou dados que serão gerados com a ajuda
-da inteligência artificial).
-
-### `src/lib`
-
-Nesta pasta, você criará módulos que contêm funcionalidades não
-relacionadas ao DOM. Aqui, você poderá incluir o arquivo
-`dataFunctions.js`, que contém as funções que permitem filtrar,
-ordenar e fazer cálculos agregados. Você também poderá criar
-arquivos com as funções que interajam com a API de inteligência
-artificial ou utilidades destinadas a armazenar dados no local storage.
-
-### `src/views`
-
-Esta pasta geralmente contém arquivos dos componentes que representam
-as diferentes páginas ou visualizações da sua aplicação.
-Cada visualização (view) pode ter seu próprio arquivo JavaScript,
-que exporta uma função responsável por gerar os elementos do DOM.
-
-### `src/index.html`
-
-Assim como no projeto anterior, existe um arquivo `index.html`.
-Neste arquivo HTML, você encontrará um elemento DOM `<div id='root'></div>`,
-onde você vai renderizar as diferentes visualizações da sua aplicação.
-
-### `src/index.js`
-
-O ponto de partida para a sua SPA será o arquivo `src/index.js`.
-Aqui, você encontrará algumas instruções e comentários para
-orientá-lo no início do desenvolvimento da sua aplicação.
-
-### `src/router.js`
-
-Neste arquivo, você irá gerenciar o roteamento da sua aplicação.
-É um arquivo que você terá que criar por conta própria.
-
-### `src/style.css`
-
-É um arquivo que você terá que criar por conta própria para adicionar
-os estilos necessários para a sua aplicação.
-
-### `src/test`
-
-Esta pasta contém os testes das suas funções e componentes. Por exemplo, os
-testes das `dataFunctions` devem estar aqui.
 
 
 ## 6. Protótipo de alta fidelidade
