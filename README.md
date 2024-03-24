@@ -106,15 +106,25 @@ Para compor este projeto para ficar real e trazer informações veridicas dos an
 
 ### Tecnologias utilizadas 
 1.Html5
+
 2.Css
+
 3.JavaScript
+
 4.Git
+
 5.GitHub
+
 6.GitHub Pages
+
 7.Eslint
+
 8.Jest
+
 9.NodeJS
+
 10.Figma
+
 11.OpenIA
 
 ## 9. Desenvolvido
