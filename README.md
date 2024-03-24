@@ -73,7 +73,7 @@ integrada à IA por meio da API da OpenAI. foi fornecido uma Chave de API que a 
 
 ## 5. Considerações técnicas
 Modelo de boilerplate 
-.
+
 ├── src
 |  ├── components 
 |  ├── data
