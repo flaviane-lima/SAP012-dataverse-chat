@@ -95,6 +95,15 @@ Modelo de boilerplate
 ## 6. Protótipo de alta fidelidade
 Usei o figma para desenhar o prototipo para ter uma idéia de como queria que fosse feita a parte visual do projeto.
 
+### Protótipo Home
+(![alt text](<src/assets/image (1).png>))
+
+### Prototipo Chave API
+![alt text](<src/assets/image (2).png>)
+
+### Prototipo Chat individual
+![alt text](<src/assets/image (3).png>)
+
 ## 7. Testes de usabilidade
 Durante o os teste do projeto foi feita algumas modificações na parte responsiva do projeto para que o usuário tanto de telas maiores e menores pudesse acessar o site e de que certa forma não quebrasse tanto as imagens e informações.. Foi bem complicado fazer essas modificações.
 
