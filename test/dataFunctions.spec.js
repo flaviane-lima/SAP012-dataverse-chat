@@ -78,16 +78,6 @@ describe('sortBy', () => {
   })
 });
 
-// describe('handleAPIError', () => {
-//   test('retorna mensagem correta para erro 429', () => {
-//     const error = { response: { status: 429 } };
-//     expect(handleAPIError(error)).toBe('Você atingiu a cota de tokens por minuto. Por favor, aguarde um momento antes de tentar novamente.');
-//   });
 
-//   test('retorna mensagem correta para erro 500', () => {
-//     const error = { response: { status: 500 } };
-//     expect(handleAPIError(error)).toBe('Ocorreu um erro ao interagir com a API. Por favor, tente novamente mais tarde.');
-//   });
-// });
 
 
