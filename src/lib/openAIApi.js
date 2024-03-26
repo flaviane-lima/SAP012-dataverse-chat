@@ -2,7 +2,18 @@
 
 // Importa la función para obtener la API KEY desde apiKey.js
 import { getApiKey } from '../lib/apiKey.js';
-// import { handleAPIError } from '../lib/apiKey.js';
+
+export function handleAPIError(response) {
+  let errorMessage = 'Ocorreu um erro ao interagir com a API.';
+
+  if (response && response.status === 429) {
+    errorMessage = 'Você atingiu a cota de tokens por minuto. Por favor, aguarde um momento antes de tentar novamente.';
+  } else {
+    errorMessage += ' Por favor, tente novamente mais tarde.';
+  }
+
+  return errorMessage
+}
 
 
 export const communicateWithOpenAI = async (messages) => {
@@ -28,13 +39,14 @@ export const communicateWithOpenAI = async (messages) => {
   }
   
   try {
-    const options = await fetch(url, req);
+    const response = await fetch(url, req);
    
-    if (!options.ok) {
-      throw new Error('Falha na conexão com a API');
+    if (!response.ok) {
+      const errorMessage= handleAPIError(response);
+      throw new Error(errorMessage);
     }
    
-    const data = await options.json();
+    const data = await response.json();
   
     return data;
   } catch (error) {
