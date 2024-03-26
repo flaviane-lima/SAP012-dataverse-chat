@@ -27,14 +27,6 @@ export default function chaveApi() {
     //aqui está obtendo o valor atual do botão
     const chave = input.value;
 
-    // if (getApiKey()) {
-    //   removeApiKey();
-    //   button.textContent = 'Salvar';
-    //   input.value = ''; // Limpa o valor do input
-    // } else {
-    //   setApiKey(chave);
-    //   button.textContent = 'Deletar';
-    // }
     if (getApiKey()) {
       setApiKey(chave);
       button.textContent = 'Deletar';
