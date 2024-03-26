@@ -4,10 +4,7 @@ export const getApiKey = () => {
   // Implemente o código para obter a API KEY do armazenamento local, obtém a API KEY.
   const apiKey = localStorage.getItem('chave-api')
 
-  // if(!apiKey){
-  //   // vai dar erro se a chave não for encontrarada
-  //   throw new Error('chave apiKey não encontrada no local armazenado');
-  // }
+  
   return apiKey;
 
 };
