@@ -12,14 +12,13 @@ main.caixa-api {
 }
 
 h3 {
-  border: solid 2px blueviolet;
-  /* align-items: flex-start; */
+ 
   width: 100%;
   
 }
 
 .texto {
-  border: solid 2px pink;
+ 
   width: 100%;
 }
 
