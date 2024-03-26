@@ -58,3 +58,15 @@ export const sortBy = (data, sortBy, sortOrder) => {
   }
 
 };
+
+// export function handleAPIError(error) {
+//   let errorMessage = 'Ocorreu um erro ao interagir com a API.';
+
+//   if (error.response && error.response.status === 429) {
+//     errorMessage = 'Você atingiu a cota de tokens por minuto. Por favor, aguarde um momento antes de tentar novamente.';
+//   } else {
+//     errorMessage += ' Por favor, tente novamente mais tarde.';
+//   }
+
+//   return errorMessage
+// }
