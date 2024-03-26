@@ -15,22 +15,22 @@ header {
   background-color: black;
   display: flex;
   flex-direction: row;
-  max-width: 1140px;
+  /* max-width: 1140px; */
   align-items: center;
-  height: 6vh;
+  height: 7vh;
 }
 header figure img {
-  padding-top: 5px;
+  padding-top: 6px;
   width: 45px;
   height: 37px;
-  margin: 8px;
+  margin: 5px;
   position: relative;
   left: 0;
 }
 header h1 {
   color: #ffa500;
   font-family: Lemon;
-  font-size: 22px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
