@@ -27,15 +27,25 @@ export default function chaveApi() {
     //aqui está obtendo o valor atual do botão
     const chave = input.value;
 
+    //   if (getApiKey()) {
+    //     setApiKey(chave);
+    //     button.textContent = 'Deletar';
+    //   } else {
+    //     removeApiKey();
+    //     button.textContent = 'Salvar';
+    //     input.value = ''; // Limpa o valor do input
+    //   }
+    // });
     if (getApiKey()) {
-      setApiKey(chave);
-      button.textContent = 'Deletar';
-    } else {
       removeApiKey();
       button.textContent = 'Salvar';
       input.value = ''; // Limpa o valor do input
+    } else {
+      setApiKey(chave);
+      button.textContent = 'Deletar';
     }
   });
+
 
   return viewEl;
 }
