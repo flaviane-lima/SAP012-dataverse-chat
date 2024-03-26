@@ -32,7 +32,7 @@ export default [
     "name": "Yu Yu Hakusho",
     "shortDescription": "Ação, Aventura, Comédia Dramática, Sobrenatural",
     "description": "Baseado no mangá de Yoshihiro Togashi, que conta a história de Yusuke Urameshi, um delinquente juvenil que morre ao tentar salvar uma criança de um acidente de carro. Ele é ressuscitado e recebe o título de “Detetive Espiritual”, tendo que investigar casos envolvendo demônios e aparições no Mundo Humano. O anime se torna mais focado em lutas e torneios de artes marciais conforme avança. O anime tem 112 episódios, dois filmes, uma série de OVAs e uma série live-action. Yu Yu Hakusho é considerado um dos melhores animes dos anos 90.",
-    "imageUrl": "https://furansujapon.com/wp-content/uploads/2020/12/Yu-Yu-Hakusho.jpg",
+    "imageUrl": "https://t.ctcdn.com.br/okH0a4Ql1ywDKMrjsXp0S9zWgBU=/1200x675/smart/i404041.jpeg",
     "facts": {
       "creatorOfManga": "Yoshihiro Togashi",
       "producerOfManga": "Yoshihiro Togashi",
