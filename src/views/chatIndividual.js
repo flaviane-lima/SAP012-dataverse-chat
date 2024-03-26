@@ -96,7 +96,6 @@ export default function chatIndividual(props) {
 
 
         // Exibir a mensagem na interface do usuário
-        // const chatMensagens = document.getElementById('chat-menssagem');
         const liSegundo = document.createElement('li');
         liSegundo.classList.add('mensagem-resposta');
         liSegundo.innerHTML = `<span>${assistantMessage}</span>`;
