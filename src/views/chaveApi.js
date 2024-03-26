@@ -19,23 +19,31 @@ export default function chaveApi() {
   input.value = chaveSalva || ''; // Define o valor do input para a chave salva, se existir
 
   if (chaveSalva) {
+    //se a chave estiver salva o botão muda para deletar
     button.textContent = 'Deletar';
   }
 
   button.addEventListener('click', function () {
+    //aqui está obtendo o valor atual do botão
     const chave = input.value;
 
+    // if (getApiKey()) {
+    //   removeApiKey();
+    //   button.textContent = 'Salvar';
+    //   input.value = ''; // Limpa o valor do input
+    // } else {
+    //   setApiKey(chave);
+    //   button.textContent = 'Deletar';
+    // }
     if (getApiKey()) {
+      setApiKey(chave);
+      button.textContent = 'Deletar';
+    } else {
       removeApiKey();
       button.textContent = 'Salvar';
       input.value = ''; // Limpa o valor do input
-    } else {
-      setApiKey(chave);
-      button.textContent = 'Deletar';
     }
   });
 
   return viewEl;
 }
-
-// Definir funciones/componentes similares para otras rutas
